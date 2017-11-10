@@ -15,11 +15,13 @@ void get_arq(FILE *q, int quantLinhas, int quantAtributos, float matriz[][quantA
         aux = strtok(linha,",");
         while(aux != NULL){
             matriz[i][j] = *aux;
+            printf("%s ,", aux);
             j++;
             aux = strtok(NULL,",");
         }
         j=0;
         i++;
+        printf("\n");
     }
 }
 
